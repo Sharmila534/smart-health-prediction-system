@@ -1,0 +1,52 @@
+<!-- partial:index.partial.html -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Health Prediction System - Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="loginForm" onsubmit="return validateForm()">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error" class="error-message"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function validateForm() {
+            // Your login validation logic here
+            // ...
+            if (username.value === "admin" && password.value === "password") {
+                window.location.href = "file:///C:/Users/saish/OneDrive/Desktop/webproject/main-page/dist/index.html"; // Replace with the URL of your main page
+                return false;
+            } else {
+                document.getElementById("error").innerHTML = "Invalid username or password";
+                return false;
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- partial -->

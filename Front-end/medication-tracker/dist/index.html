@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Medication tracker</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html><head>  <link rel="stylesheet" href="style.css"></head><body>
+    <header>
+        <h1>Medication Tracker</h1>
+    </header>
+
+    <section id="medication-management">
+        <h2>Medication Management</h2>
+        <p>Input your medications, dosages, and schedules.</p>
+        <form id="med-form">
+            <input type="text" placeholder="Medication Name" required>
+            <input type="text" placeholder="Dosage" required>
+            <input type="text" placeholder="Schedule" required>
+            <button type="submit">Add Medication</button>
+        </form>
+    </section>
+
+    <section id="reminders-alerts">
+        <h2>Reminders and Alerts</h2>
+        <p>Set up reminders for taking medications and refilling prescriptions.</p>
+        <button onclick="setReminder()">Set Reminder</button>
+    </section>
+
+    <section id="drug-interaction-checker">
+        <h2>Drug Interaction Checker</h2>
+        <p>Input multiple medications to check for potential interactions.</p>
+        <input type="text" placeholder="Enter Medications" required>
+        <button onclick="checkInteractions()">Check Interactions</button>
+    </section>
+
+    <section id="health-diary">
+        <h2>Health Diary</h2>
+        <p>Log side effects or reactions to medications.</p>
+        <textarea placeholder="Log your notes here..."></textarea>
+        <button onclick="saveLog()">Save Log</button>
+    </section>
+
+    <section class="dashboard">
+        <h2>Visually Engaging Dashboard</h2>
+        <p>See your medication adherence over time.</p>
+        <img src="https://istrategytech.com/images/pill-remainder.svg" alt="Dashboard Image 1">
+        <img src="https://i0.wp.com/www.healthymepa.com/wp-content/uploads/HAP18_StayonTrack_v1-1-e1532351362469.jpg?fit=640%2C335&ssl=1" alt="Dashboard Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM4VuelvUgcWG2E8DqwXHfGqK2ewFkUDqUcA&s" alt="Dashboard Image 3">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

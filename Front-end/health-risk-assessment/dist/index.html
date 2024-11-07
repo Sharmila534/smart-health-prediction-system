@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Health-risk assessment</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html><head>  <link rel="stylesheet" href="style.css"></head><body>
+    <header>
+        <h1>Smart Health Prediction System</h1>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#assessment">Health Risk Assessment</a>
+            <a href="#resources">Educational Resources</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="dashboard">
+            <h2>User Dashboard</h2>
+            <div class="dashboard-info">
+                <div class="health-indicator">
+                    <i class="fas fa-weight"></i>
+                    <p>Your BMI: <span id="bmi">25.0</span></p>
+                </div>
+                <div class="health-indicator">
+                    <i class="fas fa-utensils"></i>
+                    <p>Calories Consumed Today: <span id="calories">1800</span> kcal</p>
+                </div>
+                <div class="health-indicator">
+                    <i class="fas fa-running"></i>
+                    <p>Exercise Duration Today: <span id="exercise">30</span> minutes</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="assessment" class="assessment">
+            <h2>Health Risk Assessment Tool</h2>
+            <form id="riskForm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+                <button type="submit">Assess Health Risk</button>
+            </form>
+            <div id="assessmentResult"></div>
+        </section>
+
+        <section class="progress-tracking">
+            <h2>Progress Tracking</h2>
+            <div class="goal-setting">
+                <img src="https://generated-assets.prod.myninja.ai/e77441a0-a9c4-4a36-a4ad-8836cb1732db/04c2b63d-2b70-4ab2-9678-38840fb61f15_2.jpeg" alt="Finish Line" />
+                <img src="https://generated-assets.prod.myninja.ai/869c8e89-35ab-4b5a-9feb-569ecb6c196e/5c42fbd9-cfc4-4e4a-9e60-04c7e6dae2f9_2.jpeg" alt="Trophy" />
+            </div>
+            <div class="step-count">
+                <label for="steps">Add Steps:</label>
+                <input type="number" id="steps" placeholder="Enter steps here" />
+                <button id="trackSteps">Add Steps</button>
+                <p>Total Steps Today: <span id="totalSteps">0</span></p>
+            </div>
+            <p class="motivational-quote">"The journey of a thousand miles begins with one step."</p>
+        </section>
+
+        <section id="resources" class="resources">
+            <h2>Helpful Health Resources</h2>
+            <ul>
+                <li><a href="https://www.mayoclinic.org/patient-info" target="_blank">Mayo Clinic Patient Info</a></li>
+                <li><a href="https://www.who.int/health-topics" target="_blank">World Health Organization</a></li>
+                <li><a href="https://www.cdc.gov/nutrition/" target="_blank">CDC Nutrition</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact Us: email@example.com | 123-456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

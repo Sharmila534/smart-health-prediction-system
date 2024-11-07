@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://cdn.prod.website-files.com/650c1bee516c4e723b11b29a/651de333b528c95cab21e2f3_1aaf46_38f95d1834c547149f23fc4e0eae65cb~mv2.webp');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.health-indicator {
+    text-align: center;
+}
+
+.health-indicator i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.progress-tracking {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.goal-setting img {
+    width: 100px;
+    margin: 10px;
+}
+
+.step-count {
+    margin: 20px 0;
+}
+
+.step-count input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.stepsResult {
+    margin-top: 10px;
+}
+
+.motivational-quote {
+    font-style: italic;
+    margin-top: 20px;
+    color: #f0e68c;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 5px 0;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

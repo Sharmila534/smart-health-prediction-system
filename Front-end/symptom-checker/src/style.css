@@ -1,0 +1,73 @@
+/* Color Palette */
+:root {
+    --primary-color: #590D22; /* Blue */
+    --secondary-color: #800F2F; /* Teal */
+    --accent-color: #A4133C; /* Orange */
+    --background-color: #C9184A; /* Light Gray */
+    --text-color: #FF46D; /* Dark Gray */
+    --link-color: #FF758F; /* Link color */
+    --link-hover-color: #590D22; /* Hover color */
+    --background-image: url('https://i.pinimg.com/736x/a0/7a/b7/a07ab7f5a3d168948c4ab4957c24e3da.jpg'); /* Add background image */
+}
+
+/* Apply colors to body and text */
+body {
+    background-image: var(--background-image);
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: White;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Additional styling for sections */
+.container {
+    padding: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

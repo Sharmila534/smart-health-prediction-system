@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Exercise recommendations</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html><head>  <link rel="stylesheet" href="style.css"></head><body>
+    <div class="container">
+        <header>
+            <h1>Smart Health Prediction System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exercises">Exercises</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Welcome to Smart Health Prediction System</h2>
+            <p>Your journey to better health starts here. Get personalized exercise recommendations based on your profile!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide personalized exercise recommendations tailored to your age, gender, and health conditions. Our goal is to help you achieve your fitness goals safely and effectively.</p>
+        </section>
+
+        <section id="user-profile">
+            <h2>Create Your Profile</h2>
+            <form id="profile-form">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="health">Health Conditions:</label>
+                <input type="text" id="health" placeholder="e.g., Diabetes, Arthritis">
+
+                <label for="goals">Fitness Goals:</label>
+                <input type="text" id="goals" placeholder="e.g., Weight Loss, Muscle Gain">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="exercise-recommendations" style="display:none;">
+            <h2>Exercise Recommendations</h2>
+            <p id="scroll-message"></p>
+            <div class="exercise-category">
+                <h3>Cardio</h3>
+                <div class="exercise-card">
+                    <img src="https://www.sundried.com/cdn/shop/articles/c27ddca5b9550a6940dfef2581b6c38d_1100x.jpg?v=1557744738" alt="Cardio Exercise" />
+                    <h4>Running</h4>
+                    <p>Great for cardiovascular health.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://www.vingo.fit/wp-content/uploads/2022/09/8-ways-cycling-combats-aging.jpg" alt="Cardio Exercise" />
+                    <h4>Cycling</h4>
+                    <p>Excellent for building endurance.</p>
+                </div>
+            </div>
+            <div class="exercise-category">
+                <h3>Strength Training</h3>
+                <div class="exercise-card">
+                    <img src="https://static.strengthlevel.com/images/exercises/push-ups/push-ups-800.jpg" alt="Strength Exercise" />
+                    <h4>Push-Ups</h4>
+                    <p>Great for upper body strength.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://media1.popsugar-assets.com/files/thumbor/uymLdLwcsZuQzm4oFGNFY2QLl5g=/fit-in/792x792/filters:format_auto():upscale()/2023/12/21/819/n/1922729/tmp_UyrHy8_feb4a42e2a9b21aa_PS23_Fitness_Workout_13_Move_06_Goblet_Squat.jpg" alt="Strength Exercise" />
+                    <h4>Squats</h4>
+                    <p>Effective for lower body strength.</p>
+                </div>
+            </div>
+            <div class="exercise-category">
+                <h3>Flexibility</h3>
+                <div class="exercise-card">
+                    <img src="https://preview.redd.it/uo9bifnxfi351.png?auto=webp&s=76287ec276f974c4d9976e37172d85ff6c02eb1c" alt="Flexibility Exercise" />
+                    <h4>Hamstring Stretch</h4>
+                    <p>Improves flexibility in the legs.</p>
+                </div>
+                <div class="exercise-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Pm6HfPR2yFl5OxkYFWvdUBrmpB8_x2CNQA&s" alt="Flexibility Exercise" />
+                    <h4>Shoulder Stretch</h4>
+                    <p>Enhances shoulder flexibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Read our latest articles on health and fitness to stay informed and motivated!</p>
+            <p><a href="https://www.anytimefitness.co.in/blog/" target="_blank">Visit our Blog for more articles!</a></p>
+        </section>
+
+        <section id="community">
+            <h2>Community</h2>
+            <p>Join our community to share experiences, tips, and support each other on your fitness journey!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Smart Health Prediction System</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const health = document.getElementById('health').value;
+            const goals = document.getElementById('goals').value;
+
+            // Show the exercise recommendations section
+            document.getElementById('exercise-recommendations').style.display = 'block';
+            
+            // Display a message to scroll down
+            document.getElementById('scroll-message').innerText = 'Scroll down to find your recommended exercises!';
+
+            // Optionally, you can customize recommendations based on user input here
+            alert(`Profile Created:\nAge: ${age}\nGender: ${gender}\nHealth Conditions: ${health}\nFitness Goals: ${goals}`);
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

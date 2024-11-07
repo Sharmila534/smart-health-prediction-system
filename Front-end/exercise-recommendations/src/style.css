@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlwbAMC-3UG8cWVzv5qt166EXs62eBUc-C_w&s') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+#user-profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.exercise-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

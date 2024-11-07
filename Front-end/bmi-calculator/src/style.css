@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://s.yimg.com/ny/api/res/1.2/bd7dUOS.bphCskARFIxxbQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/os/creatr-uploaded-images/2020-12/5e4c2e70-3ed1-11eb-bd5f-189e96d3f420'); /* Replace with your background image */
+    background-size: cover;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+}
+
+.form-container {
+    margin: 32px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.history {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+canvas {
+    margin-top: 20px;
+     max-width: 100%; /* Make sure the canvas is responsive */
+    height: auto; 
+}

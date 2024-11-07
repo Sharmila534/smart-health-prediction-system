@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - BMI calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+    <title>Smart Health   
+ Prediction System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Health Prediction System</h1>
+            <h2>BMI Calculator</h2>
+        </header>
+        <div class="form-container">
+            <form id="profileForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <button type="submit">Save Profile</button>
+            </form>
+            <form id="bmiForm">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+
+                <label for="weight">Weight (kg):label>
+                <input type="number" id="weight" required>   
+
+
+                <button   
+ type="submit">Calculate BMI</button>
+            </form>
+        </div>
+        <div id="result" class="result"></div>
+        <div id="history" class="history"></div>
+        <canvas id="bmiChart" width="400" height="200"></canvas>
+        <button id="clearHistory" style="margin-top: 20px;">Clear BMI History</button>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
